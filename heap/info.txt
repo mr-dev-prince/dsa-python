@@ -1,0 +1,12 @@
+Heap :
+    -> A complete binary tree that satisfies the heap property
+
+Max-Heap:
+    -> Each Parent node is greater than child nodes
+
+Min-Heap:
+    -> Each parent node is lesser than child nodes
+    
+Ops:
+    -> Insertion : O(logN)
+    -> Deletion : O(logN)

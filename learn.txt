@@ -1,0 +1,29 @@
+-> / -> gives floating value
+-> // -> gives integer value 
+
+-> Binary to decimal - Inbuild Func = int(binary-string, 2) => [ int("110", 2) -> 6 ]
+
+-> for queue --> use deque
+-> for hashmap --> use defaultdict
+
+-> for i in range(len(arr) - 1, -1, -1) -> starts from -1 [ back ], substracts 1 in each iteration
+
+=======>
+    queue += filter(None, (node.right, node.left))
+                
+    is the same as
+
+    if node.right:
+        queue += [node.right]
+    if node.left:
+        queue += [node.left]                            
+========>
+
+========>
+    in python, we have the access to iterator even after loop ends
+
+    for i in range(10):
+        print(i)
+    
+    print(i) <- [ i ] here, points to the last value it was assigned
+=========>

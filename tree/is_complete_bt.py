@@ -1,0 +1,18 @@
+from collections import deque
+
+class Solution:
+    def isCompleteTree(self, root):
+        q = deque([root])
+
+        while q:
+            node = q.popleft()
+
+            if node:
+                q.append(node.left)
+                q.append(node.right)
+            else:
+                while q:
+                    if q.popleft():
+                        return False
+            
+        return True

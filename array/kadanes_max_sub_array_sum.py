@@ -1,0 +1,10 @@
+def kadanes(nums):
+    maxSubSum = nums[0]
+    curSum = 0
+    for n in nums:
+        if curSum < 0:
+            curSum = 0
+        curSum += n
+        maxSubSum = max(curSum, maxSubSum)
+    
+    return maxSubSum

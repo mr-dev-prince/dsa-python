@@ -1,0 +1,28 @@
+Tree -> Non-Linear Hierachical Data Structure | consists nodes connected by edges
+
+-> Operations : Traversal [ Preorder, Postorder, Inorder ], Insertion, Deletion
+
+-> Components
+    -> Node - contains a key or value and pointer to child nodes
+    -> edges - connecting link between two nodes
+    -> height - 
+    -> depth -
+
+-> Properties :
+    -> There should never be a cycle
+    -> All Nodes should be connected
+    -> [ N ] Nodes -> [ N - 1 ] edges
+
+-> Binary Tree - Every node have atmost two [ left, right ] nodes and atleast 0 nodes
+    -> Full Binary Tree -> either two child nodes or none
+    -> Perfect Binary Tree -> all leaf nodes are at same level | all internal nodes have two child nodes
+    -> Complete Binary Tree -> Any level should not have a gap in between [ Heaps are complete binary tree ]
+    -> Degenerate Binary Tree -> Zig Zag child nodes [0 or 1 node for each node]
+    -> Skewed Binary Tree -> A tree having only left or only right childs [ 0 or 1 nodes for each node ]
+    -> Balanced Binary Tree -> abs | height(left) - height(right) | = 0
+
+-> Traversals 
+    -> Pre-Order Traversal - [ Root -> Left -> Right ]
+    -> Post-Order Traversal - [ Left -> Right -> Root ]
+    -> In-Order Traversal - [ Left -> Root -> Right ]
+    -> Level-Order Traversal -> Level-By-Level

@@ -1,0 +1,23 @@
+Graph Traversal
+
+1. BFS : Breadth-First-Search
+2. DFS : Depth-First-Search
+
+# It is very likely that you reach at the same node again.
+
+DFS(u, adj, vis) : [visited array, adjacent nodes, start point] | 
+    -> if vis : return 
+    -> vis[u] = True
+    -> for each adjacent neighbour -> call dfs recursively
+
+
+BFS() : [visited array, adjacent nodes, queue, start point] | [ Shortest Paths ]
+    -> while queue
+        -> pop 
+        -> measure
+        -> enque
+
+# Cycle-Detection In a Graph [ Directed & Undirected ]
+    -> Undirected : 
+        -> DFS :  [ Pass current node as parent node of next node, if you find out that the next node is already visited and it is not the parent ] -> [ vis, parent, adj, src ]
+        -> BFS :  [ ]

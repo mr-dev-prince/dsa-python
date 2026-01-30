@@ -1,0 +1,22 @@
+-> Binary Search Tree -> max two child nodes for each nodes
+    -> left node : always lesser than parent node
+    -> right node : always greater than parent node
+
+Operations:
+    -> Search - O(height)
+    -> Insertion - O(height)
+    -> Deletion - O(height)
+
+Details :
+    -> Inorder Traversal is always sorted
+    -> 
+
+Deletion:
+    -> if root is None return root
+    -> if key < curr.val -> 
+    -> elif key > curr.val ->
+    -> if key == curr.val -> 
+
+AVL: Adelson-Velsky & Landis
+    -> self balancing binary search Tree
+    -> 
