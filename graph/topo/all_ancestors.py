@@ -10,14 +10,14 @@ def all_ancestors(n, edges):
         adj[u].append(v)
         indegree[v] += 1
     
-    # step 2 : enqueue all the nodes with indegree 0
+    # step 2 : enqueue all the nodes with indegree 0 | means they are ancestors of some node
     for i in range(n):
         if indegree[i] == 0:
             q.append(i)
 
     topo = []
 
-    # step 3 : find out topological order or nodes
+    # step 3 : find out topological order of nodes
     while q:
         curr = q.popleft()
         topo.append(curr)
