@@ -39,12 +39,8 @@ class Solution:
             adjList[preReq].append(course)
             indegree[course] += 1
 
-        q = deque()
+        q = deque([i for i, v in enumerate(indegree) if v == 0])
         topo = []
-
-        for i in range(numCourses):
-            if indegree[i] == 0:
-                q.append(i)
 
         while q:
             curr = q.popleft()
