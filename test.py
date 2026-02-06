@@ -1,5 +1,13 @@
 
-n = m = 4
+def countSetBits(n):
+    count = 0
 
-dis = [[float("inf") for _ in range(m)] * n]
-print(dis)
+    while n:
+        bit = n & 1
+        if bit:
+            count += 1
+        n = n >> 1
+
+    return count
+
+print(countSetBits(2147483645))
