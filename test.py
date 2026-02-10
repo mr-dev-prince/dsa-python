@@ -1,13 +1,7 @@
 
-def countSetBits(n):
-    count = 0
 
-    while n:
-        bit = n & 1
-        if bit:
-            count += 1
-        n = n >> 1
+ans = 1
 
-    return count
+mask = 1 << 3
 
-print(countSetBits(2147483645))
+print(ans + mask)
